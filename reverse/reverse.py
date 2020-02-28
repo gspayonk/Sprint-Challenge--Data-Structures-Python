@@ -42,6 +42,7 @@ class LinkedList:
     # if we've gotten here, then the target node isn't in our list
     return False
 
+  #here we are initializing the values and during each iteration we are setting the next node of current to previous, then setting previous to current, and current as next node, in the end when curr becomes none, we set the head pointer to the prev node.
   def reverse_list(self):
     prev_node = None
     curr_node = self.head

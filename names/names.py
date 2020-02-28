@@ -17,12 +17,14 @@ duplicates = []  # Return the list of duplicates in this data structure
 binarysearch = BinarySearchTree('duplicate_names')
 
 # Replace the nested for loops below with your improvements
+#here we are adding the names from name_1 to the tree
 for name in names_1:
     # for name_2 in names_2:
     #     if name_1 == name_2:
     #         duplicates.append(name_1)
     binarysearch.insert(name)
 
+#then we're checking the names in names_2 and see if it's already there, if it finds it, it's added to the duplicates array
 for name in names_2:
     if binarysearch.contains(name):
         duplicates.append(name)
